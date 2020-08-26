@@ -1,0 +1,19 @@
+*IDEA Hacer calculadora para savar IVA fin de mes
+
+Nav bar
+
+Inicio : Productos, Ventas del mes, Ventas Anual , Ingresos del Mes
+Balance del mes
+Caja 
+	Panel caja
+	Ventas del mes
+	
+Inventario : lista de productos, crud
+
+ ID | Nombre | Stock |  
+
+
+Herramientas
+	Proveedores
+	Calculadora
+Ajustes:Poner logo o name, cambiar color nav

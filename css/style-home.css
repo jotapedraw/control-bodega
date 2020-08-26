@@ -1,0 +1,210 @@
+/*
+MONOCROMATICOS
+
+color base : #478F7B
+strong     : #81A298
+button     : #2E5C4F
+fondo log  : #AFDBCF
+*/
+
+/* HEADER */
+
+header{
+    position: fixed;
+    z-index: 3;
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    width: 100%;
+    background-color: #478F7B;
+}
+
+.menu_bar{
+    margin-right: auto;
+}
+.menu_bar img{
+    cursor: pointer;
+    height: 5vh;
+}
+header a{
+    margin-right: 2em;
+    display: flex;
+    color: white;
+    height: 100%;
+    width: 7%;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid white;
+}
+header a:hover{
+    background-color: rgb(112, 172, 155);
+
+}
+
+/* /HEADER */
+/* NAVBAR*/
+
+.menu{
+    left: -20%;
+    background-color: rgb(44, 44, 44);
+    width: 20%;
+    top: 0;
+    z-index: 2;
+    height: 100vh;
+    position: fixed;
+}
+nav{
+    padding-top: 8vh;
+    display: flex;
+    flex-direction: column;
+}
+nav a{
+    padding: 0.5em 1em;
+    color: rgb(167, 167, 167);
+}
+nav a:hover{
+    color: white;
+    background-color: rgb(39, 39, 39);
+    border-left: 2px solid #478F7B ;
+    
+}
+
+nav a img{
+    margin-left: 0.5em;
+    height: 2vh;
+}
+.flecha{
+    float: right;
+    margin-left: auto;
+    padding: 0.3em 0;
+}
+.despliegue-caja{
+
+    position: fixed ;
+    z-index: 1;
+    width: 13%;
+    top: 13vh;
+    left: -20%;
+    display: flex;
+    background: rgb(75, 75, 75);
+    flex-direction: column;
+    position: absolute;    
+}
+.despliegue-herramientas{
+    position: fixed ;
+    z-index: 1;
+    width: 10%;
+    top: 25vh;
+    left: -20%;
+    display: flex;
+    background: rgb(75, 75, 75);
+    flex-direction: column;
+    position: absolute;    
+}
+.despliegue-caja a, .despliegue-herramientas a{
+    padding: 0.5em;
+    color: rgb(167, 167, 167);
+}
+.despliegue-caja a:hover, .despliegue-herramientas a:hover{
+    border: none;
+    color: white;
+    background: rgb(61, 61, 61);
+}
+/* CONTENIDO */
+
+.contador-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 2em;
+    padding-top: 9vh;
+}
+.contador-bloque{
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 24%;
+    height: 15vh;
+}
+.contador-bloque img{
+    height: 10vh;
+}
+.icono-ventas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:  3px 0 0 3px ;
+    height: 100%;
+    width: 40%;
+    background-color: tomato;
+}
+.icono-producto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:  3px 0 0 3px ;
+    height: 100%;
+    width: 40%;
+    background-color: rgb(71, 197, 255);
+}
+.icono-ingresosm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:  3px 0 0 3px ;
+    height: 100%;
+    width: 40%;
+    background-color: rgb(84, 179, 60);
+}
+.icono-ingresosa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:  3px 0 0 3px ;
+    height: 100%;
+    width: 40%;
+    background-color: rgb(218, 205, 37);
+}
+.contador-texto{
+    padding: 1em;
+}
+/* GRAFICO */
+.container-balance{
+    margin: 0 2em;
+    display: flex;
+    flex-direction: row;
+}
+.container-datos{
+    padding: 1em;
+    margin: 1em 0;
+    height: 65vh;
+    width: 23%;
+    border-radius: 5px;
+    background-color: white;
+    border-top:3px solid #2E5C4F;
+}
+.container-datos p{
+    margin: 0.5em 0;
+    font-size: 18px;
+}
+.container-grafico{
+    border-radius: 5px;
+    background-color: white;
+    border-top:3px solid #2E5C4F;
+    margin: 1em 0 0 auto;
+    height: 70vh;
+    width: 73%;
+    
+}
+.container-grafico h1{
+    color: rgb(151, 151, 151);
+    margin: 0.5em 0 0 1em;
+    font-size: 25px;
+}
+canvas{
+    height: 90%;
+    width: 100%;
+}
